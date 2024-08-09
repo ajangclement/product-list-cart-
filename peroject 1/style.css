@@ -1,0 +1,109 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+.container{
+    width: 900vw;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+header .icon-cart{
+    position: relative;
+}
+header .icon-cart span{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+.listproduct .item img{
+    width: 90px;
+    filter: drop-shadow(0 20px 20px black);
+}
+.listproduct{
+    display: grid;
+    grid-template-columns:repeat( 4, 1fr);
+    gap: 20px;
+}
+.listproduct .item{
+    background-color: grey;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listproduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listproduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listproduct .item button{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+.cartTab{
+    width: 400px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0 0 0 autp;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+body.showcart .carttab{
+    inset: 0 0 0 auto;
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .bnt{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .bnt button{
+    background-color: rgb(204, 144, 32);
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .bnt .close{
+    background-color: rgb(99, 93, 93);
+}
+.cartTab .listcart .item img{
+    width: 100%;
+}
+.cartTab .listcart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
